@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let date = new Date();
+      let month = date.getMonth() + 1;
+      if (month >= 3 && month <= 5) {
+        document.write(
+          "Весна: месяцы относящиеся к данной поре - Март, Апрель, Май"
+        );
+      } else if (month >= 6 && month <= 8) {
+        document.write(
+          "Лето: месяцы относящиеся к данной поре - Июнь, Июль, Август"
+        );
+      } else if (month >= 9 && month <= 11) {
+        document.write(
+          "Осень: месяцы относящиеся к данной поре - Сентябрь, Октябрь, Ноябрь"
+        );
+      } else {
+        document.write(
+          "Зима: месяцы относящиеся к данной поре - Декабрь, Январь, Февраль"
+        );
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+ <head>
+   <title></title>
+</head>
+<body>
+   <script>
+   // Введенная дата рождения (год, месяц, день)
+let birthday = new Date("2004-06-06");
+let today = new Date(); // текущая дата
+
+// Вычисляем разницу между текущей датой и днем рождения в миллисекундах
+let difference = today.getTime() - birthday.getTime();
+
+// Конвертируем полученное значение в годы
+let age = Math.floor(difference / (1000 * 60 * 60 * 24 * 365.25));
+
+document.write("Возраст человека: " + age);
+     </script>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Промежуток времени</title>
+  <script>
+    let startTime;
+    let endTime;
+
+    function startTimer() {
+      startTime = new Date();
+    }
+
+    function endTimer() {
+      if (startTime) {
+        endTime = new Date();
+        let timeDifference = endTime - startTime; // разница в миллисекундах
+        let secondsDifference = Math.floor(timeDifference / 1000); // разница в секундах
+
+        alert('Прошло времени: ' + secondsDifference + ' секунд');
+      } else {
+        alert('Сначала нужно нажать кнопку "start"');
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="startTimer()">Start</button>
+  <button onclick="endTimer()">End</button>
+</body>
+</html>
+
+ -->
+
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Максимальный элемент в массиве</title>
+  <script>
+    // Создание массива целых чисел
+    let numbers = [5, 8, 3, 12, 6, 9, 2];
+
+    // Нахождение максимального элемента массива
+    let maxNumber = Math.max(numbers);
+ 
+    // Вывод максимального элемента на страницу
+    document.write('Максимальный элемент в массиве: ' + maxNumber);
+  </script>
+</head>
+<body>
+
+</body>
+</html>
+ -->
+
+
+ <!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Извлечение подстроки</title>
+  <script>
+    // Исходная строка
+    let originalString = "Пример строки для извлечения подстроки";
+
+    // Позиция начала подстроки и ее длина
+    const startPosition = 8;
+    const length = 6;
+
+    // Извлечение подстроки
+    const extractedSubstring = originalString.substr(startPosition, length);
+
+    // Вывод извлеченной подстроки на страницу
+    document.write('Извлеченная подстрока: ' + extractedSubstring);
+  </script>
+</head>
+<body>
+
+</body>
+</html>
+ -->
